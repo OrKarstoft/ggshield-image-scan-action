@@ -14,9 +14,4 @@ runs:
   using: "docker"
   image: "docker://gitguardian/ggshield:v1.31.0"
   args:
-    - ggshield
-    - secret
-    - scan
-    - docker
-    - -v
-    - ${{ inputs.image }}
+    - ggshield secret scan docker -v ${{ inputs.image }}
