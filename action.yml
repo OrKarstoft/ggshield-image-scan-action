@@ -3,10 +3,10 @@ description: "Scan images for secrets and other issues."
 author: Oliver Karstoft
 
 inputs:
-  args:
+  image:
     description: |
-      Arguments to pass to `ggshield`.
-    required: false
+      Image to pass to `ggshield`.
+    required: true
 branding:
   icon: "shield"
   color: "blue"
@@ -14,4 +14,4 @@ runs:
   using: "docker"
   image: "docker://gitguardian/ggshield:v1.31.0"
   args:
-    - ${{ inputs.args }}
+    - ggshield secret scan docker -v ${{ inputs.image }}
