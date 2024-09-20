@@ -1,13 +1,11 @@
-name: "GitGuardian Shield Action"
-description: "Scan commits for secrets and other issues."
-author: GitGuardian <support@gitguardian.com>
+name: "GitGuardian Shield Image Scan Action"
+description: "Scan images for secrets and other issues."
+author: Oliver Karstoft
 
 inputs:
   args:
     description: |
-      Arguments to pass to `ggshield secret scan ci`.
-
-      [`ggshield secret scan ci` reference](https://docs.gitguardian.com/ggshield-docs/reference/secret/scan/ci).
+      Arguments to pass to `ggshield`.
     required: false
 branding:
   icon: "shield"
