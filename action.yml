@@ -15,6 +15,5 @@ branding:
 runs:
   using: "docker"
   image: "docker://gitguardian/ggshield:v1.31.0"
-  entrypoint: "/app/docker/actions-secret-entrypoint.sh"
   args:
     - ${{ inputs.args }}
