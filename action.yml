@@ -13,6 +13,6 @@ branding:
 runs:
   using: "docker"
   image: "docker://gitguardian/ggshield:v1.31.0"
-  entrypoint: ./entrypoint.sh
+  entrypoint: /app/entrypoint.sh
   args:
     - ${{ inputs.image }}
